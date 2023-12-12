@@ -1,0 +1,53 @@
+﻿<Window x:Class="HelpArmy.DonateInfo" ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelpArmy"
+        mc:Ignorable="d"
+        Title="DonateInfo" Height="620" Width="800">
+    <Grid x:Name="DonationGrid" Initialized="DonationGrid_Initialized">
+        <Image Stretch="Fill" Source="G:\Images/frame_blue_yellow.png" Margin="0,10,0,-10"/>
+        <Label x:Name="label" Content="Створити донат" HorizontalAlignment="Left" Margin="239,44,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Назва предмету:" HorizontalAlignment="Left" Margin="72,109,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="126"/>
+        <Label x:Name="label_Copy1" Content="Сума:" HorizontalAlignment="Left" Margin="72,254,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="126"/>
+        <Label x:Name="label_Copy2" Content="Тип:" HorizontalAlignment="Left" Margin="72,183,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="126"/>
+        <Label x:Name="label_Copy3" Content="Об'єкт фінансування:" HorizontalAlignment="Left" Margin="72,326,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="154"/>
+        <Label x:Name="label_Copy4" Content="Кількість:" HorizontalAlignment="Left" Margin="72,400,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="128"/>
+        <Label x:Name="label_Copy5" Content="Дата отримання:" HorizontalAlignment="Left" Margin="72,470,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="126"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Text="&#xA;" TextWrapping="NoWrap" VerticalAlignment="Top" Width="218" VerticalContentAlignment="Top"  Margin="78,143,0,0" Height="29" FontSize="20"/>
+        <ComboBox x:Name="TypesComboBox" HorizontalAlignment="Left" Margin="78,214,0,0" VerticalAlignment="Top" Width="218" Height="29" FontSize="17"/>
+        <TextBox x:Name="textBoxSum" HorizontalAlignment="Left" Text="&#xA;" TextWrapping="NoWrap" VerticalAlignment="Top" Width="218" VerticalContentAlignment="Top"  Margin="78,289,0,0" Height="29" FontSize="20"/>
+        <TextBox x:Name="textBoxFinancingObject" HorizontalAlignment="Left" Text="&#xA;" TextWrapping="NoWrap" VerticalAlignment="Top" Width="218" VerticalContentAlignment="Top"   Margin="78,362,0,0" Height="29" FontSize="20"/>
+        <TextBox x:Name="textBoxQuantity" HorizontalAlignment="Left" Text="&#xA;" TextWrapping="NoWrap" VerticalAlignment="Top" Width="218" VerticalContentAlignment="Top"  Margin="78,436,0,0" Height="29" FontSize="20"/>
+        <DatePicker x:Name="SelectedDate" HorizontalAlignment="Left" Margin="198,476,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="imageRectangle_Copy" HorizontalAlignment="Left" Height="212" Margin="502,185,0,0" Stroke="Black" VerticalAlignment="Top" Width="212">
+            <Rectangle.Fill>
+                <ImageBrush x:Name="imageBrush1"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="NameErrorText" Foreground="Red" Margin="310,142,310,416" TextWrapping="Wrap"/>
+        <TextBlock x:Name="TypeErrorText" Foreground="Red" Margin="323,214,298,337" TextWrapping="Wrap"/>
+        <TextBlock x:Name="SumErrorText" Foreground="Red" Margin="323,291,298,263" TextWrapping="Wrap"/>
+        <TextBlock x:Name="FinancingObjectErrorText" Foreground="Red" Margin="323,361,298,189" TextWrapping="Wrap"/>
+        <TextBlock x:Name="QuantityErrorText" Foreground="Red" Margin="323,436,298,116" TextWrapping="Wrap"/>
+
+        <Button Content="Закрити" HorizontalAlignment="Left" Margin="502,535,0,0" VerticalAlignment="Top" Height="41" Width="212" FontSize="24" Background="#FF0C54A0" Foreground="White"/>
+        <Menu Margin="0,0,0,553">
+            <MenuItem Header="_Профіль" FontSize="16" Click="MenuItemProfile_Click"/>
+            <MenuItem Header="_Донати" FontSize="16"  Click="MenuItemDonates_Click"/>
+            <MenuItem Header="_Задонатити" FontSize="16" Click="MenuItemHelpType_Click"/>
+            <MenuItem Header="_Звіт" FontSize="16"/>
+
+        </Menu>
+        <Menu Margin="0,0,0,555">
+            <MenuItem Header="_Профіль" FontSize="16" Click="MenuItemProfile_Click"/>
+            <MenuItem Header="_Донати" FontSize="16"  Click="MenuItemDonates_Click"/>
+            <MenuItem Header="_Задонатити" FontSize="16" Click="MenuItemHelpType_Click"/>
+            <MenuItem Header="_Звіт" FontSize="16" Click="MenuItem_Click"/>
+
+        </Menu>
+        <Label x:Name="CategoryLabel" Content="Категорія: " HorizontalAlignment="Left" Margin="536,118,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="232"/>
+        <Button Content="Зберегти" HorizontalAlignment="Left" Margin="78,535,0,0" VerticalAlignment="Top" Height="41" Width="218" FontSize="24" Background="#FF0C54A0" Foreground="White" Click="Button_Click"/>
+    </Grid>
+</Window>
