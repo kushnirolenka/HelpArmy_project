@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CreateDonate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DonateInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Donations.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DownloadGraphic.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Graphic.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegistrationVol.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegistrationOrg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HelpType.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CreateDonate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DonateInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Donations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DownloadGraphic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Graphic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegistrationVol.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegistrationOrg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HelpType.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

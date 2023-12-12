@@ -1,0 +1,29 @@
+﻿<Window x:Class="HelpArmy.Donations" ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelpArmy"
+        mc:Ignorable="d"
+        Title="Donations" Height="620" Width="800">
+    <Grid>
+        <Grid>
+            <Image Stretch="Fill" Source="G:\Images/frame_blue.png" Margin="0,0,0,0"/>
+            <Menu VerticalAlignment="Top" Height="32">
+                <MenuItem Header="_Профіль" FontSize="16" Click="MenuItemProfile_Click"/>
+                <MenuItem Header="_Донати" FontSize="16"  Click="MenuItemDonates_Click"/>
+                <MenuItem Header="_Задонатити" FontSize="16" Click="MenuItemHelpType_Click"/>
+                <MenuItem Header="_Звіт" FontSize="16" Click="MenuItem_Click"/>
+
+            </Menu>
+
+        </Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="0,33,0,0">
+            <Grid x:Name="DonationsGrid" Initialized="Grid_Initialized">
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+
+
+</Window>

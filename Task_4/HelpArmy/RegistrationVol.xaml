@@ -1,0 +1,62 @@
+﻿<Window x:Class="HelpArmy.RegistrationVol" ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelpArmy"
+        mc:Ignorable="d"
+        Title="RegistrationVol" Height="620" Width="800">
+    <Grid Height="600" VerticalAlignment="Top" Initialized="Grid_Initialized">
+        <Image Stretch="Fill" Source="G:\Images/frame_yellow.png" Margin="0,0,0,0"/>
+        <Label x:Name="label" Content="Реєстрація" HorizontalAlignment="Center" Margin="0,59,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Введіть ім'я:" HorizontalAlignment="Left" Margin="287,127,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="label_Copy1" Content="Введіть прізвище:" HorizontalAlignment="Left" Margin="287,191,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="label_Copy2" Content="Оберіть місто:" HorizontalAlignment="Left" Margin="287,253,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="label_Copy3" Content="Введіть e-mail:" HorizontalAlignment="Left" Margin="287,316,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="label_Copy4" Content="Введіть пароль:" HorizontalAlignment="Left" Margin="286,379,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <ComboBox x:Name="CitycomboBox" HorizontalAlignment="Center" Margin="0,281,0,284" Width="218" SelectionChanged="comboBox_SelectionChanged">
+            <ComboBoxItem Content="Біла Церква"/>
+            <ComboBoxItem Content="Бровари"/>
+            <ComboBoxItem Content="Вінниця"/>
+            <ComboBoxItem Content="Дніпро"/>
+            <ComboBoxItem Content="Донецьк"/>
+            <ComboBoxItem Content="Житомир"/>
+            <ComboBoxItem Content="Запоріжжя"/>
+            <ComboBoxItem Content="Івано-Франківськ"/>
+            <ComboBoxItem Content="Кам'янець-Подільський"/>
+            <ComboBoxItem Content="Київ"/>
+            <ComboBoxItem Content="Кременчук"/>
+            <ComboBoxItem Content="Кривий Ріг"/>
+            <ComboBoxItem Content="Кропивницький"/>
+            <ComboBoxItem Content="Луганськ"/>
+            <ComboBoxItem Content="Луцьк"/>
+            <ComboBoxItem Content="Львів"/>
+            <ComboBoxItem Content="Маріуполь"/>
+            <ComboBoxItem Content="Миколаїв"/>
+            <ComboBoxItem Content="Одеса"/>
+            <ComboBoxItem Content="Полтава"/>
+            <ComboBoxItem Content="Рівне"/>
+            <ComboBoxItem Content="Севастополь"/>
+            <ComboBoxItem Content="Сімферополь"/>
+            <ComboBoxItem Content="Суми"/>
+            <ComboBoxItem Content="Тернопіль"/>
+            <ComboBoxItem Content="Ужгород"/>
+            <ComboBoxItem Content="Харків"/>
+            <ComboBoxItem Content="Херсон"/>
+            <ComboBoxItem Content="Хмельницький"/>
+            <ComboBoxItem Content="Черкаси"/>
+            <ComboBoxItem Content="Чернівці"/>
+            <ComboBoxItem Content="Чернігів"/>
+        </ComboBox>
+        <TextBox x:Name="NametextBox" HorizontalAlignment="Center" Text="&#xA;" TextWrapping="NoWrap" MaxLines="1" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="218" Margin="0,155,0,0" FontSize="20" Height="30" AcceptsReturn="False"/>
+        <TextBox x:Name="SurnametextBox" HorizontalAlignment="Center" Text="&#xA;" TextWrapping="NoWrap" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="218" Margin="0,218,0,0" FontSize="20" Height="30"/>
+        <TextBox x:Name="EmailtextBox" HorizontalAlignment="Center" Text="&#xA;" TextWrapping="NoWrap" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="218" Margin="0,345,0,0" FontSize="20" Height="30" TextChanged="textBox_Copy1_TextChanged_1"/>
+        <PasswordBox x:Name="PasswordText" HorizontalAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="218" Margin="0,406,0,0"  FontSize="20" Height="30" PasswordChar="*" />
+        <TextBlock Name="passwordErrorText" Foreground="Red" Margin="527,401,21,152" TextWrapping="Wrap"/>
+        <Button x:Name="button" Content="Зареєструватися" HorizontalAlignment="Center" Margin="0,476,0,0" VerticalAlignment="Top" Width="218" Height="44" Click="button_Click" FontWeight="Bold" FontSize="20" Background="#FF0C54A0" Foreground="White"/>
+        <TextBlock x:Name="nameErrorText" Foreground="Red" Margin="527,155,21,392" TextWrapping="Wrap"/>
+        <TextBlock x:Name="cityErrorText" Foreground="Red" Margin="527,281,21,266" TextWrapping="Wrap"/>
+        <TextBlock x:Name="emailErrorText" Foreground="Red" Margin="527,345,21,202" TextWrapping="Wrap"/>
+        <TextBlock x:Name="surnameErrorText" Foreground="Red" Margin="527,218,21,329" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
